@@ -1,5 +1,28 @@
 # learn-ruby
-#### Notes on Ruby
+#### Week 1
+```
+* irb interactive ruby shell REPL
+* Everything's an object - BasicObject, Object, .class, nil class, true/false class, .is_a?, .nil?
+* Duck typing
+* How can you see the methods defined on a class? .methods .public_methods
+* Comments
+* Variables, class variables - never use
+* Strings, symbols, interpolation, to_s, to_sym
+* Constants
+* Arrays, array literals, first and last
+* Hashes, fetch, key?
+* Ranges, inclusive, exclusive
+* If elsif else, unless, inline if
+* What values are truthy/falsey
+* And or vs && ||
+* Case, inline when then
+* loop do (infinite), For loop (use each), next, break
+* When to use curly braces vs do end?
+* Enumerable, short hand (&:) notation
+* Difference between inject and each with object
+* How to sum a bunch of numbers easily?
+* Indentation 2 spaces, snake case, Spacing around blocks, max line length 120, ruby style guide
+```
 
 - irb: ruby console (interactive ruby)
 - Everything in Ruby is an object and inherits from `BasicObject`
