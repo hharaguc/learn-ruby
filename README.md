@@ -54,8 +54,8 @@ end
 :dane // this is a symbol!
 ```
 - Why are symbols good?
-  - Ruby keeps a table of symbols - symbols can be used in multiple places but will only be instantiated (and create a memory footprint) once
-  - `to_sym` adds an object to the symbol table
+  - Ruby keeps a table of symbols - symbols are instantiated once but can be referenced in multiple places so this is A+ for memory efficiency
+- `to_sym` creates/adds an object to the symbol table
   
 - Ruby `unless` = `if not`
 ```
