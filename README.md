@@ -78,6 +78,6 @@ end
 ```
 
 #### TO DO:
-- [ ] Learn Ruby enumerable
+- [ ] Learn Ruby enumerable https://ruby-doc.org/core-2.6.5/Enumerable.html
 - [ ] https://ruby.github.io/TryRuby/ 
 - Review Ruby style guide
