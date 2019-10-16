@@ -1,3 +1,23 @@
+```
+* Gem install, ruby gems
+* Using ruby to run a file
+* method definition, no polymorphism
+* Optional, named params
+* Braces, curly braces for hash arguments
+* Bang methods, boolean methods with ?
+* Blocks, yield, block_given?
+* returns last value of block
+* Exceptions, begin rescue end ensure
+* Modules vs classes, initialize/new
+* Class method vs instance method, class << self
+* Private, send, __send__
+* attr_reader, attr_writer, attr_accessor
+* Namespace, using :: for root class
+* Re-opening classes, monkey patching
+* Inheritance vs mixins, include vs extend
+* Bundler, gemfile
+```
+
 ### Linter
 - use rubocop
 
