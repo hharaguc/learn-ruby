@@ -1,3 +1,6 @@
+### Linter
+- use rubocop
+
 ### Installing Gems (Packages)
 - use bundler - [bundler.io](bundler.io)
 
