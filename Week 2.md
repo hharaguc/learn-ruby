@@ -106,4 +106,32 @@ end
 
 A.new.send(:boo) # send takes a symbol; this is how you can call private methods - ONLY USE THIS FOR DEBUGGING
 ```
+
+## Week 3: ACTIVE RECORD
+### What it is
+- an ORM: object relational mapping; this means `one model map to one table`
+- Active Support :: Active Record as lodash :: javascript
+- `bundle exec rake ... # rake is a task runner`
+
+### Some commands
+- ** Below, `User` is just an example model`
+- CRUD: create | read | update | destroy
+- Using `User.find(id: 100)` in the Rails console gives you an `ActiveRecord::Relation`
+  - vs. `User.find_by(prefix: "Mr.")` - use regular `.find` when you're searching by ID
+- `User.new` vs. `User.create` - `create` will actually save the object, `new` does not
+- `.update` vs. `.update_attributes`
+- `.update_all`: batch updates
+- `User.delete` vs. `User.destroy`
+  - `.delete` is not as safe as `destroy`!! because it skips over model validations and hooks
+  
+- can preload relationships in ActiveRecord to prevent N+1s
+  - relationships are lazy loaded
+  - Rails lazy loads as much as it can
+- can view sql by doing `User.<ActiveRecord command>.to_sql` - V USEFUL
+
+
+
+
+TO DO:
+- [ ] Learn about Active Support
   
