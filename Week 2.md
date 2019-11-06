@@ -134,4 +134,55 @@ A.new.send(:boo) # send takes a symbol; this is how you can call private methods
 
 TO DO:
 - [ ] Learn about Active Support
-  
+
+
+## Week 4: Testing!
+
+```
+require 'spec_helper'
+
+Rspec.describe ImportJob do
+  setup
+  before/after/around hooks
+  context blocks
+    describe blocks
+      test
+        expectations
+        run the code
+        assertions
+```    
+- When you instantiate a new class, use `subject` instead of `let`
+```
+subject(:import_job) { described_class.new(options: options) }
+```
+
+- Around hooks
+```
+around :each do |example|
+  ENV['MY_ENV_VAR'] = true
+  example.run
+  ENV['MY_ENV_VAR'] = nil
+end
+```
+
+- Testing instance vs. class methods
+```
+describe 'ImportJob.create_from_existing' # instance method, use a dot
+
+describe 'ImportJob#parent_options' # class method, use a pound sign
+```
+
+### Gotchas
+- `let` lazily loads things, will only instantiate the variable when it is referenced in your code
+```
+let(:another_job) { ImportJob.new }
+
+it 'returns the parents options' do
+  parent_options = subject.parent_options
+end
+```
+
+- Solution: eager load
+```
+let!(:another_job) { ImportJob.new }
+```
