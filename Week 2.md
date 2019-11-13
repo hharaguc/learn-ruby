@@ -186,3 +186,10 @@ end
 ```
 let!(:another_job) { ImportJob.new }
 ```
+
+## Week 5: Grape
+- `R101::ApiService` is included in the `r101-api-infra` gem
+- Use `Replica.read` for read Twirp endpoints
+- Use Twirp classes when you return at the end of a Twirp endpoint method
+- Never fetch a relationship in an entity
+  - Good rule of thumb: preload in the endpoint
